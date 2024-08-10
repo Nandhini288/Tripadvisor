@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gabarito', sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 9px;
+    z-index: 5;
+}
+
+.tripadvisor {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 180px;
+    height: fit-content;
+}
+
+.tripadvisor img {
+    width: 25%;
+}
+
+.nav-1 {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.nav-1 h1:hover {
+    border-bottom: solid black 2px;
+}
+
+.nav-2 {
+    display: none;
+}
+
+.INR {
+    position: absolute;
+    top: 8px;
+    right: 190px;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 50px;
+    border: rgb(161, 151, 151) 1px;
+}
+
+.INR:hover {
+    transition: 0s;
+    background-color: #afa9a9;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.signin {
+    position: absolute;
+    top: 8px;
+    right: 100px;
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+
+.wh {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 900px) {
+    .INR {
+        display: none;
+    }
+
+    .nav-1 {
+        display: none;
+    }
+
+    .wh {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .signin {
+        display: none;
+    }
+
+    .nav-1 {
+        display: none;
+    }
+
+    .tripadvisor {
+        padding-left: 60px;
+    }
+}
+
+.nav-bar {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    font-size: 10px;
+    color: rgb(73, 59, 59);
+}
+
+.nav-bar h1:hover {
+    border-bottom: solid black 2px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+    .nav-bar {
+        font-size: 6px;
+        width: fit-content;
+    }
+}
+
+.search_all {
+    width: 15px;
+    height: fit-content;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-left: 250px;
+    padding: 3px;
+    border: solid rgb(161, 151, 151) 1px;
+    border-radius: 30px;
+    width: 60%;
+    box-shadow: 8px 8px 5px #afa9a9;
+}
+
+.Search-icon {
+    padding: 3px;
+    align-content: center;
+}
+
+.search-bar input {
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    background-color: transparent;
+    align-content: center;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.Search-bar-button {
+    padding: 3px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    width: 15%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: rgb(52, 224, 161);
+}
+
+.search-bar input img {
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .search-bar {
+        margin-left: 25%;
+        height: fit-content;
+    }
+
+    .search-bar input {
+        font-size: 12px;
+    }
+
+    .Search-bar-button {
+        font-size: 12px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search-bar {
+        margin-left: 10%;
+        height: fit-content;
+    }
+
+    .search-bar input {
+        font-size: 8px;
+    }
+
+    .Search-bar-button {
+        font-size: 8px;
+        height: 20px;
+    }
+}
+
+.img {
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin-top: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.img-1 {
+    width: 90%;
+    height: fit-content;
+    background-color: rgb(217, 209, 252);
+    border-radius: 10px;
+}
+
+.img_t {
+    padding: 10px;
+    position: absolute;
+    top: 75px;
+    left: 200px;
+}
+
+.beta {
+    width: fit-content;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: white;
+}
+
+.img-t0 {
+    font-size: 10px;
+}
+
+.img-t1 {
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.img-t2 {
+    font-size: 20px;
+}
+
+.start {
+    margin-top: 10px;
+    width: 55%;
+    height: 35px;
+    background-color: rgb(15, 15, 75);
+    color: wheat;
+    border-radius: 25px;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .img_t {
+        position: absolute;
+        margin-top: -40px;
+        margin-left: -100px;
+    }
+
+    .img-t0 {
+        font-size: 7px;
+    }
+
+    .img-t1 {
+        font-size: 35px;
+    }
+
+    .img-t2 {
+        font-size: 15px;
+    }
+
+    .start {
+        font-size: 12px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .img_t {
+        position: absolute;
+        margin-top: -70px;
+        margin-left: -170px;
+    }
+
+    .img-t0 {
+        font-size: 5px;
+    }
+
+    .img-t1 {
+        font-size: 22px;
+    }
+
+    .img-t2 {
+        font-size: 10px;
+    }
+
+    .start {
+        font-size: 7px;
+        height: 25px;
+    }
+}
+.plan {
+    margin-top: 20px;
+    padding: 10px;
+    overflow-x: scroll;
+}
+.plan::-webkit-scrollbar{
+    width: 0;
+}
+.plan-img {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.plan-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+@media screen and (max-width:600px) {
+    .plan-img img{
+        width: 50%;
+        border-radius: 10px;
+    }
+}
+
+.plan-img img:hover {
+    transition: 0s;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.plan1__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h2 {
+    font-size: 20px;
+}
+
+.plan1 p {
+    padding: 10px;
+}
+.plan1-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+    overflow-x: scroll;    
+}
+.plan1-1::-webkit-scrollbar{
+    width: 0;
+}
+.dot {
+    color: rgb(0, 170, 108);
+    font-size: 28px;
+}
+
+.trip__card {
+    flex-grow: 1;
+    flex-basis: 20%;
+    font-size: 12px;
+}
+
+.trip__card img {
+    height: fit-content;
+    width: 280px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.plan2,
+.plan3 p {
+    padding: 10px;
+}
+.plan2-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+    overflow-x: scroll;    
+}
+.plan2-1::-webkit-scrollbar{
+    width: 0;
+}
+.plan3-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 10px;
+    overflow-x: scroll;    
+}
+.plan3-1::-webkit-scrollbar{
+    width: 0;
+}
+.plan4 {
+    background-color: rgb(245, 219, 219);
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+.plan4-1 {
+    display: flex;
+    padding: 5px;
+}
+
+.trip__card4 {
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+}
+
+.trip__card4 img {
+    height: fit-content;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.plan__title {
+    margin-top: 10px;
+}
+
+.plan5 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.trip__card5 {
+    position: relative;
+}
+
+.trip__card5 img {
+    height: fit-content;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.trip__card5-1 {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    color: white;
+    font-size: 35px;
+}
+@media screen and (max-width:900px) {
+    .trip__card5-1 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:600px) {
+    .trip__card5-1 {
+        font-size: 15px;
+    }
+}
+.plan6 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(245, 219, 219);
+    height: fit-content;
+}
+
+.plan6-1 {
+    padding: 5px;
+}
+
+.trip__card6 {
+    margin: 5px;
+}
+
+.trip__card6 img {
+    height: fit-content;
+    width: 75%;
+    border-radius: 10px;
+}
+
+.trip__card6-1 {
+    margin-top: 10px;
+    display: flex;
+    font-size: 15px;
+    gap: 10px;
+}
+
+.trip__card6-1 img {
+    width: 10%;
+}
+
+.trip__card6-2 {
+    width: 100%;
+    position: absolute;
+    margin-top: 180px;
+    align-items: center;
+    text-align: center;
+}
+
+.plan6-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.learn {
+    margin-top: 20px;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+@media screen and (max-width:600px) {
+    .trip__card6-1{
+        margin-top: -50px;
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    .trip__card6-2{
+        font-size: 10px;
+        margin-top: 80px;
+    }
+    .learn{
+        margin-top: 10px;
+        font-size: 12px;
+        width: 100px;
+    }
+    
+}
+.footer {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    background-color: rgb(243, 205, 205);
+}
+
+.footer__one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.footer__one__s1 {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(8, 8, 8);
+    padding: 10px;
+    text-align: center;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    background-color: rgb(243, 205, 205);
+}
+
+.footer__two {
+    display: flex;
+    align-items: center;
+}
+
+.footer__two__s1 {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 0px;
+    color: rgb(8, 8, 8);
+    padding: 0px;
+}
+
+.trip {
+    width: 40px;
+}
+
+.footer__two__s2 {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 0px;
+    color: rgb(8, 8, 8);
+}
+
+.s2-l1 {
+    font-size: 12px;
+}
+
+.footer__two__s3 {
+    margin-left: -60px;
+    color: rgb(8, 8, 8);
+    font-size: 10px;
+}
+
+.footer__three {
+    display: flex;
+    align-items: center;
+}
+
+.trip1 {
+    width: 20px;
+    margin-right: 15px;
+}
+
+
+@media screen and (max-width:900px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .trip__card {
+        flex-basis: 40%;
+    }
+}
